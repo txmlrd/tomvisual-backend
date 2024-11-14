@@ -13,16 +13,13 @@ return new class extends Migration
     {
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
-            $table->string('main_image');
             $table->string('title', 255);
             $table->unsignedBigInteger('project_type');
             $table->integer('year');
             $table->string('url');
             $table->text('content');
-            $table->
             $table->timestamps();
-
-            $table->foreign('project_type')->references('id')->on('project_types');
+            $table->foreign('project_type')->references('id')->on('project_types')->onDelete('cascade');
         });
     }
 

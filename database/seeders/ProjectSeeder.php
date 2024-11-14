@@ -16,26 +16,26 @@ class ProjectSeeder extends Seeder
     {
         Project::create([
             'title' => 'Website Portfolio',
-            'main_image' => 'https://example.com/images/portfolio.jpg',
-            'project_type' => 1, 
+            'project_type' => 1,
             'year' => 2024,
-            'content' => 'Ini adalah website portfolio untuk menampilkan karya-karya terbaru.'
+            'content' => 'Ini adalah website portfolio untuk menampilkan karya-karya terbaru.',
+            'url' => 'google.com'
         ]);
 
         Project::create([
             'title' => 'Mobile Banking App',
-            'main_image' => 'https://example.com/images/mobile-banking.jpg',
-            'project_type' => 2, 
+            'project_type' => 2,
             'year' => 2024,
-            'content' => 'Aplikasi mobile untuk memudahkan transaksi perbankan.'
+            'content' => 'Aplikasi mobile untuk memudahkan transaksi perbankan.',
+            'url' => 'google.com'
         ]);
 
         Project::create([
             'title' => 'E-commerce Website',
-            'main_image' => 'https://example.com/images/ecommerce.jpg',
-            'project_type' => 1, 
+            'project_type' => 1,
             'year' => 2023,
-            'content' => 'Sebuah website untuk berbelanja online.'
+            'content' => 'Sebuah website untuk berbelanja online.',
+            'url' => 'google.com'
         ]);
     }
 }

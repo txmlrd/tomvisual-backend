@@ -10,9 +10,13 @@ class Project extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'title', 'main_image', 'project_type', 'year', 'content'
+        'title',
+        'project_type',
+        'year',
+        'url',
+        'content'
     ];
-    
+
     /**
      * Get the user that owns the Project
      *
@@ -25,7 +29,6 @@ class Project extends Model
 
     public function media()
     {
-        return $this->hasMany(Media::class);
+        return $this->belongsToMany(Media::class, 'project_media');
     }
-
 }

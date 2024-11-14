@@ -13,11 +13,10 @@ return new class extends Migration
     {
         Schema::create('media', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('project_id');
+            $table->string('type');
             $table->string('url');
+            $table->string('name');
             $table->timestamps();
-
-            $table->foreign('project_id')->references('id')->on('projects');
         });
     }
 

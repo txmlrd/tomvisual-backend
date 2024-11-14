@@ -17,7 +17,6 @@ class ProjectDetailResource extends JsonResource
         return [
             'id' => $this->id,
             'title' => $this->title,
-            'main_image' => $this->main_image,
             'project_type' => $this->project_type,
             'year' => $this->year,
             'content' => $this->content,

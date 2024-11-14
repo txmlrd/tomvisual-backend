@@ -15,16 +15,16 @@ return new class extends Migration
             $table->id();
             $table->string('name', 255);
             $table->string('description', 255);
-            $table->timestamps(); 
+            $table->timestamps();
         });
     }
-    
+
 
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('project_type');
+        Schema::dropIfExists('project_types');
     }
 };
